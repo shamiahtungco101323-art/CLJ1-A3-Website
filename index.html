@@ -3,296 +3,715 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CLJ 1 | Introduction to Philippine Criminal Justice System</title>
+  <meta name="description" content="Introduction to the Philippine Criminal Justice System - CLJ 1 BSCRIM Block A3">
+  <title>Introduction to the Philippine Criminal Justice System | CLJ 1</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <header class="hero">
+
+  <div class="topline"></div>
+
+  <header class="hero" id="home">
+
     <nav class="nav">
-      <div class="brand">CLJ 1 • A3</div>
-      <button class="menu-btn" aria-label="Open menu">☰</button>
-      <div class="nav-links">
-        <a href="#home">Home</a>
+      <a href="#home" class="brand">
+        <span class="brand-mark">⚖</span>
+        <span>CLJ 1 <small>• A3</small></span>
+      </a>
+
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#home" class="active">Home</a>
         <a href="#court">Court</a>
         <a href="#jurisdiction">Jurisdiction</a>
         <a href="#proceedings">Proceedings</a>
         <a href="#judgment">Judgment</a>
+        <a href="#quiz">Quiz</a>
         <a href="#references">References</a>
       </div>
     </nav>
 
-    <section id="home" class="hero-content">
-      <p class="eyebrow">Yllana Bay View College, Inc. • College of Criminal Justice Education</p>
-      <h1>CLJ 1</h1>
-      <h2>Introduction to the Philippine Criminal Justice System</h2>
-      <p class="lead">
-        An educational website about the <strong>Court Pillar</strong>, courts,
-        jurisdiction, court proceedings, and judgments.
-      </p>
-      <a class="button" href="#court">Start Learning</a>
-    </section>
+    <div class="hero-grid">
+      <div>
+        <p class="eyebrow"><span class="dot"></span>YLLANA BAY VIEW COLLEGE • COLLEGE OF CRIMINAL JUSTICE EDUCATION</p>
+        <p class="kicker">CLJ 1 • INTRODUCTION TO THE PHILIPPINE CRIMINAL JUSTICE SYSTEM</p>
+
+        <h1>
+          Understanding
+          <span>the Court Pillar.</span>
+        </h1>
+
+        <p class="hero-text">
+          A simple educational guide to the Philippine court system,
+          jurisdiction, criminal proceedings, and judgments.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#court" class="btn primary">Start Learning →</a>
+          <a href="#quiz" class="btn ghost">Take the Quiz</a>
+        </div>
+
+        <div class="mini-stats">
+          <div>
+            <strong>CLJ 1</strong>
+            <span>Subject</span>
+          </div>
+          <div>
+            <strong>A3</strong>
+            <span>BSCRIM Block</span>
+          </div>
+          <div>
+            <strong>2026–27</strong>
+            <span>School Year</span>
+          </div>
+        </div>
+      </div>
+
+      <aside class="hero-card">
+        <div class="seal">⚖</div>
+        <p class="eyebrow">THE FOURTH PILLAR</p>
+        <h2>Court</h2>
+        <p>
+          The judicial system interprets and applies the law,
+          resolves disputes, and administers justice.
+        </p>
+
+        <div class="card-line"></div>
+
+        <div class="card-meta">
+          <span>COURT PILLAR</span>
+          <span>01</span>
+        </div>
+      </aside>
+    </div>
+
+    <div class="scroll-hint">SCROLL TO EXPLORE <span>↓</span></div>
   </header>
 
-  <main>
-    <section class="intro section">
-      <div class="section-title">
+
+  <!-- OVERVIEW -->
+  <section class="section" id="overview">
+    <div class="section-head">
+      <div>
+        <span class="section-no">01 / OVERVIEW</span>
+        <h2>Learn the basics<br>of the Court Pillar.</h2>
+      </div>
+
+      <p class="section-desc">
+        The court is an important part of the Philippine Criminal Justice
+        System. It helps determine whether laws have been violated and
+        provides a legal process for resolving criminal cases.
+      </p>
+    </div>
+
+    <div class="feature-grid">
+
+      <article class="feature-card">
+        <div class="icon">⚖</div>
+        <h3>What is the Court?</h3>
+        <p>
+          Courts are institutions that hear cases, interpret laws,
+          and make decisions based on the law and evidence.
+        </p>
+        <a href="#court">Explore →</a>
+      </article>
+
+      <article class="feature-card">
+        <div class="icon">⌘</div>
+        <h3>Jurisdiction</h3>
+        <p>
+          Jurisdiction refers to the legal authority of a court
+          to hear and decide a case.
+        </p>
+        <a href="#jurisdiction">Learn →</a>
+      </article>
+
+      <article class="feature-card">
+        <div class="icon">▤</div>
+        <h3>Proceedings</h3>
+        <p>
+          Criminal cases follow different stages, from arraignment
+          and trial to judgment and possible appeal.
+        </p>
+        <a href="#proceedings">View stages →</a>
+      </article>
+
+      <article class="feature-card">
+        <div class="icon">✓</div>
+        <h3>Judgment</h3>
+        <p>
+          After considering the case, the court may issue a judgment
+          of conviction or acquittal.
+        </p>
+        <a href="#judgment">Understand →</a>
+      </article>
+
+    </div>
+  </section>
+
+
+  <!-- COURT -->
+  <section class="section dark" id="court">
+
+    <div class="section-head light">
+      <div>
+        <span class="section-no">02 / THE COURT</span>
+        <h2>The Court<br>Pillar.</h2>
+      </div>
+
+      <p class="section-desc">
+        The Judiciary is one of the three great departments of government.
+        Its role is connected with interpreting laws and deciding legal cases.
+      </p>
+    </div>
+
+    <div class="definition-banner">
+      <div class="big-icon">⚖</div>
+      <div>
+        <h3>Judicial Power</h3>
+        <p>
+          Article VIII, Section 1 of the 1987 Philippine Constitution
+          provides the constitutional basis of judicial power.
+        </p>
+      </div>
+    </div>
+
+
+    <div class="subsection-title">
+      <span>BRIEF HISTORY</span>
+      <h3>Development of the Philippine Judiciary</h3>
+    </div>
+
+    <div class="timeline">
+
+      <article>
         <span>01</span>
-        <h2>About This Website</h2>
-      </div>
-      <p>
-        This website presents selected CLJ 1 lessons in a simple and organized format.
-        It focuses on the Court as the third pillar of the Criminal Justice System,
-        including the history and types of courts, jurisdiction, court proceedings,
-        and contents of judgments.
-      </p>
-      <div class="cards three">
-        <article class="card">
-          <h3>📚 Educational</h3>
-          <p>Designed for students reviewing important CLJ 1 concepts.</p>
-        </article>
-        <article class="card">
-          <h3>⚖️ Court Pillar</h3>
-          <p>Explores the role and structure of courts in the justice system.</p>
-        </article>
-        <article class="card">
-          <h3>📝 Review-Friendly</h3>
-          <p>Key ideas are summarized for easier studying and hands-on preparation.</p>
-        </article>
-      </div>
-    </section>
+        <div>
+          <b>Pre-Spanish Period</b>
+          <p>
+            Communities were governed by local customs and leaders.
+          </p>
+        </div>
+      </article>
 
-    <section id="court" class="section dark-section">
-      <div class="section-title light">
+      <article>
         <span>02</span>
-        <h2>The Court Pillar</h2>
-      </div>
-      <p>
-        A court is a body officially assembled under the authority of law to administer
-        justice. In the Criminal Justice System, the court determines the case brought
-        before it according to law.
-      </p>
+        <div>
+          <b>Spanish Period</b>
+          <p>
+            Spanish colonial laws and courts were introduced.
+          </p>
+        </div>
+      </article>
 
-      <h3 class="subheading">Historical Development of the Judiciary</h3>
-      <div class="timeline">
-        <div class="timeline-item">
-          <span>Pre-Spanish</span>
-          <p>There were no written laws. Customs, usages, and traditions guided disputes,
-          with the <em>datu</em> acting as a judge.</p>
-        </div>
-        <div class="timeline-item">
-          <span>Spanish Regime</span>
-          <p>King Philip II established the <em>Real Audiencia de Manila</em>, which had
-          judicial and other governmental functions.</p>
-        </div>
-        <div class="timeline-item">
-          <span>American Occupation</span>
-          <p>The judicial system developed during the American period, including the
-          reestablishment of the Real Audiencia and the appointment of Cayetano L. Arellano.</p>
-        </div>
-        <div class="timeline-item">
-          <span>1901</span>
-          <p>Act No. 136 provided for the organization of courts and formally established
-          the Supreme Court of the Philippine Islands.</p>
-        </div>
-        <div class="timeline-item">
-          <span>1973 Constitution</span>
-          <p>The judicial system transitioned under the 1973 Constitution, with the
-          Supreme Court having 15 members.</p>
-        </div>
-        <div class="timeline-item">
-          <span>1986–1987</span>
-          <p>After the 1986 transition, a provisional constitutional framework was used,
-          followed by the 1987 Constitution and its provisions on judicial power.</p>
-        </div>
-      </div>
-
-      <div class="callout">
-        <strong>Key idea:</strong> Article VIII, Section 1 of the 1987 Philippine Constitution
-        provides the foundation for judicial power.
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="section-title">
+      <article>
         <span>03</span>
-        <h2>Introduction to Court</h2>
-      </div>
-      <div class="definition-grid">
-        <article class="definition">
-          <h3>Legal Foundation</h3>
+        <div>
+          <b>American Period</b>
           <p>
-            Judicial power is vested in one Supreme Court and in such lower courts as may
-            be established by law.
+            New judicial institutions and legal systems developed.
           </p>
-        </article>
-        <article class="definition">
-          <h3>Judicial Power</h3>
-          <p>
-            It includes settling actual controversies involving legally demandable and
-            enforceable rights and determining grave abuse of discretion amounting to
-            lack or excess of jurisdiction.
-          </p>
-        </article>
-        <article class="definition">
-          <h3>Judicial Review</h3>
-          <p>
-            The power of the Supreme Court to determine whether laws and certain acts of
-            government are consistent with the Constitution when properly raised before it.
-          </p>
-        </article>
-      </div>
-
-      <h3 class="subheading">Types of Court</h3>
-      <div class="pill-list">
-        <span>Higher Court</span><span>Lower Courts</span><span>Collegiate Court</span>
-        <span>Regular Courts</span><span>Special Courts</span>
-      </div>
-
-      <h3 class="subheading">Regular Courts</h3>
-      <div class="court-table-wrap">
-        <table>
-          <thead>
-            <tr><th>Court</th><th>Basic role described in the lesson</th></tr>
-          </thead>
-          <tbody>
-            <tr><td>Supreme Court (SC)</td><td>Highest court and final arbiter of judicial issues.</td></tr>
-            <tr><td>Court of Appeals (CA)</td><td>Reviews appeals from Regional Trial Courts and certain quasi-judicial agencies.</td></tr>
-            <tr><td>Regional Trial Court (RTC)</td><td>Exercises jurisdiction over criminal cases within the limits provided by law.</td></tr>
-            <tr><td>MeTC / MTC / MTCC / MCTC</td><td>Trial courts with jurisdiction over matters assigned to them by law.</td></tr>
-          </tbody>
-        </table>
-      </div>
-
-      <h3 class="subheading">Special Courts</h3>
-      <div class="cards">
-        <article class="card"><h3>Court of Tax Appeals</h3><p>Handles specified tax and customs appeals and related cases within its jurisdiction.</p></article>
-        <article class="card"><h3>Sandiganbayan</h3><p>Handles specified criminal and civil cases involving graft and corruption by public officers and employees.</p></article>
-        <article class="card"><h3>Shari'a Courts</h3><p>Handle cases involving Muslim personal laws within their legal jurisdiction.</p></article>
-        <article class="card"><h3>Family Courts</h3><p>Handle cases assigned to them under the Family Courts Act and related laws.</p></article>
-        <article class="card"><h3>Drugs Courts</h3><p>Specialized courts established for specified violations under the Dangerous Drugs Act, subject to legal jurisdiction.</p></article>
-        <article class="card"><h3>Intellectual Property Courts</h3><p>Designated Regional Trial Courts handling specified intellectual property violations.</p></article>
-      </div>
-    </section>
-
-    <section id="jurisdiction" class="section alt">
-      <div class="section-title">
-        <span>04</span>
-        <h2>Jurisdiction</h2>
-      </div>
-      <p>
-        <strong>Jurisdiction</strong> refers to the power or authority given by law to a
-        court or tribunal to hear and determine certain controversies.
-        <strong>Venue</strong> refers to the geographical area in which a court with
-        jurisdiction may hear or determine a case.
-      </p>
-
-      <div class="cards three">
-        <article class="card">
-          <h3>Subject Matter</h3>
-          <p>Jurisdiction over the kind of case. The lesson connects this with the penalty provided by law.</p>
-        </article>
-        <article class="card">
-          <h3>Territory</h3>
-          <p>The case must be connected to the place where the court has territorial jurisdiction.</p>
-        </article>
-        <article class="card">
-          <h3>Person Accused</h3>
-          <p>The court obtains authority over the accused through lawful means such as arrest or voluntary submission.</p>
-        </article>
-      </div>
-
-      <h3 class="subheading">Groups of Jurisdiction</h3>
-      <div class="numbered">
-        <div><b>1. Criminal</b><p>Power and authority to hear cases that are criminal in nature.</p></div>
-        <div><b>2. Civil</b><p>Power and authority to hear cases that are civil in nature and not criminal acts.</p></div>
-      </div>
-
-      <h3 class="subheading">Classification of Jurisdiction</h3>
-      <div class="accordion">
-        <details open><summary>General Jurisdiction</summary><p>Power to adjudicate controversies except those expressly withheld from the court.</p></details>
-        <details><summary>Special Jurisdiction</summary><p>Jurisdiction limited to particular cases and subject to limitations provided by law.</p></details>
-        <details><summary>Original Jurisdiction</summary><p>Power to take judicial cognizance of a case instituted for judicial action for the first time under conditions provided by law.</p></details>
-        <details><summary>Appellate Jurisdiction</summary><p>Authority of a higher court to re-examine a lower court's final order or judgment on appeal.</p></details>
-        <details><summary>Exclusive Jurisdiction</summary><p>Power to adjudicate a case to the exclusion of other courts at that stage.</p></details>
-        <details><summary>Concurrent Jurisdiction</summary><p>Jurisdiction shared by different courts under applicable law.</p></details>
-        <details><summary>Delegated Jurisdiction</summary><p>Authority granted to inferior courts to hear and determine specified cases under certain conditions.</p></details>
-        <details><summary>Territorial Jurisdiction</summary><p>The geographical area within which a court's power may be exercised.</p></details>
-      </div>
-    </section>
-
-    <section id="proceedings" class="section">
-      <div class="section-title">
-        <span>05</span>
-        <h2>Court Proceedings</h2>
-      </div>
-      <div class="process">
-        <div class="process-step"><span>1</span><h3>Arraignment</h3><p>The accused is informed in open court of the complaint or information and enters a plea.</p></div>
-        <div class="process-step"><span>2</span><h3>Pre-Trial</h3><p>A conference before trial that may include plea bargaining, stipulations, admissions, marking evidence, and waiver of objections.</p></div>
-        <div class="process-step"><span>3</span><h3>Trial</h3><p>The formal examination of the matter in issue before a competent court to determine guilt or innocence.</p></div>
-        <div class="process-step"><span>4</span><h3>Judgment</h3><p>The court's adjudication stating whether the accused is guilty or not guilty.</p></div>
-        <div class="process-step"><span>5</span><h3>Appeal</h3><p>The case may be elevated to a higher court for review when allowed by law.</p></div>
-        <div class="process-step"><span>6</span><h3>Decision</h3><p>The judgment rendered by a court of justice or another competent tribunal.</p></div>
-      </div>
-
-      <div class="callout warning">
-        <strong>Search warrant reminder:</strong> The lesson explains that before issuing a search warrant,
-        the judge must personally examine the witness under oath and reduce the examination to writing in
-        the form of searching questions and answers.
-      </div>
-    </section>
-
-    <section id="judgment" class="section dark-section">
-      <div class="section-title light">
-        <span>06</span>
-        <h2>Contents of Judgment</h2>
-      </div>
-      <div class="judgment-grid">
-        <article>
-          <h3>Judgment of Conviction</h3>
-          <p>When the judge finds the accused guilty, the judgment addresses matters such as the legal qualification of the offense, circumstances, participation, penalty, and applicable civil liability or damages.</p>
-        </article>
-        <article>
-          <h3>Judgment of Acquittal</h3>
-          <p>When the judge finds the accused not guilty, the judgment states whether the prosecution failed to prove guilt or failed to prove guilt beyond reasonable doubt.</p>
-        </article>
-      </div>
-
-      <h3 class="subheading">Quick Review</h3>
-      <div class="quiz">
-        <p id="question">Which term means the power of a court to hear and determine a case?</p>
-        <div class="choices">
-          <button data-answer="correct">Jurisdiction</button>
-          <button data-answer="wrong">Venue</button>
-          <button data-answer="wrong">Appeal</button>
         </div>
-        <p id="quiz-result" class="quiz-result"></p>
-      </div>
-    </section>
+      </article>
 
-    <section id="references" class="section">
-      <div class="section-title">
-        <span>07</span>
-        <h2>References</h2>
+      <article>
+        <span>04</span>
+        <div>
+          <b>1901</b>
+          <p>
+            The Philippine Commission established a reorganized judiciary.
+          </p>
+        </div>
+      </article>
+
+      <article>
+        <span>05</span>
+        <div>
+          <b>1973 Constitution</b>
+          <p>
+            The judicial structure continued to develop under a new Constitution.
+          </p>
+        </div>
+      </article>
+
+      <article>
+        <span>06</span>
+        <div>
+          <b>1986–1987</b>
+          <p>
+            The present constitutional framework of the Judiciary was established.
+          </p>
+        </div>
+      </article>
+
+    </div>
+
+
+    <div class="subsection-title">
+      <span>COURT STRUCTURE</span>
+      <h3>Regular and Special Courts</h3>
+    </div>
+
+    <div class="court-groups">
+
+      <div class="court-group">
+        <div class="group-label">REGULAR COURTS</div>
+
+        <div class="court-list">
+          <div>
+            <strong>Supreme Court</strong>
+            <span>Highest court</span>
+          </div>
+
+          <div>
+            <strong>Court of Appeals</strong>
+            <span>Appellate court</span>
+          </div>
+
+          <div>
+            <strong>Regional Trial Courts</strong>
+            <span>Trial courts</span>
+          </div>
+
+          <div>
+            <strong>Metropolitan Trial Courts</strong>
+            <span>First-level courts</span>
+          </div>
+
+          <div>
+            <strong>Municipal Trial Courts</strong>
+            <span>First-level courts</span>
+          </div>
+
+          <div>
+            <strong>Municipal Circuit Trial Courts</strong>
+            <span>First-level courts</span>
+          </div>
+        </div>
       </div>
-      <p class="small-note">
-        The educational content on this page was organized from the CLJ 1 midterm coverage
-        provided by the student. Legal rules can change, so this student website is for
-        educational/review purposes and should not be treated as legal advice.
+
+
+      <div class="court-group">
+        <div class="group-label gold">SPECIAL COURTS</div>
+
+        <div class="special-grid">
+          <div>
+            <b>Sandiganbayan</b>
+            <small>Anti-graft court</small>
+          </div>
+
+          <div>
+            <b>Court of Tax Appeals</b>
+            <small>Tax-related cases</small>
+          </div>
+
+          <div>
+            <b>Shari'a District Courts</b>
+            <small>Shari'a jurisdiction</small>
+          </div>
+
+          <div>
+            <b>Shari'a Circuit Courts</b>
+            <small>Shari'a jurisdiction</small>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- JURISDICTION -->
+  <section class="section soft" id="jurisdiction">
+
+    <div class="section-head">
+      <div>
+        <span class="section-no">03 / JURISDICTION</span>
+        <h2>Know the<br>court's authority.</h2>
+      </div>
+
+      <p class="section-desc">
+        Jurisdiction is the power or authority given by law to a court
+        to hear and decide a particular case.
       </p>
-      <div class="reference-list">
-        <p><strong>Primary class material:</strong> CLJ 1 (Intro. to Philippine Criminal Justice System), Midterm Coverage, Yllana Bay View College, College of Criminal Justice Education. Prepared by:BSCRIM I - BLK A3</p>
-        <p><strong>Book cited in the class material:</strong> Donato, Lea M., PhD CJ; Canutap, Joy Nicole C., RCrim; Abuan III, Placido V., RCrim. <em>From Crime to Justice.</em> Wiseman's Book Trading, Inc., 2025.</p>
-        <p><strong>Flowchart source shown in the class material:</strong> CACI-AJP, “Philippines Judiciary: Description of Courts / Flowchart.”</p>
-        <p><strong>Constitutional reference mentioned in the material:</strong> 1987 Philippine Constitution, Article VIII, Section 1.</p>
+    </div>
+
+    <div class="three-cards">
+
+      <article>
+        <span>01</span>
+        <h3>Subject Matter</h3>
+        <p>
+          The authority of a court over the type or nature of a case.
+        </p>
+      </article>
+
+      <article>
+        <span>02</span>
+        <h3>Territorial</h3>
+        <p>
+          The authority of a court over cases connected to a particular
+          geographical area.
+        </p>
+      </article>
+
+      <article>
+        <span>03</span>
+        <h3>Personal</h3>
+        <p>
+          The authority of a court over the persons involved in a case.
+        </p>
+      </article>
+
+    </div>
+
+
+    <div class="classification">
+
+      <div class="subsection-title">
+        <span>CLASSIFICATIONS</span>
+        <h3>Understanding Jurisdiction</h3>
       </div>
-    </section>
-  </main>
+
+      <div class="accordion">
+
+        <details open>
+          <summary>
+            Original Jurisdiction
+            <span>01</span>
+          </summary>
+          <p>
+            The power of a court to hear and decide a case at the first instance.
+          </p>
+        </details>
+
+        <details>
+          <summary>
+            Appellate Jurisdiction
+            <span>02</span>
+          </summary>
+          <p>
+            The power of a higher court to review decisions made by a lower court.
+          </p>
+        </details>
+
+        <details>
+          <summary>
+            Exclusive Jurisdiction
+            <span>03</span>
+          </summary>
+          <p>
+            A case may be heard only by the court specifically authorized by law.
+          </p>
+        </details>
+
+        <details>
+          <summary>
+            Concurrent Jurisdiction
+            <span>04</span>
+          </summary>
+          <p>
+            More than one court may have authority over a particular case.
+          </p>
+        </details>
+
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- PROCEEDINGS -->
+  <section class="section" id="proceedings">
+
+    <div class="section-head">
+      <div>
+        <span class="section-no">04 / PROCEEDINGS</span>
+        <h2>From accusation<br>to decision.</h2>
+      </div>
+
+      <p class="section-desc">
+        A criminal case passes through several stages. Each stage has
+        a specific purpose in protecting due process and administering justice.
+      </p>
+    </div>
+
+
+    <div class="process">
+
+      <article>
+        <span>01 / ARRAIGNMENT</span>
+        <h3>The accused is informed.</h3>
+        <p>
+          The accused is formally informed of the charge and is asked to enter
+          a plea.
+        </p>
+      </article>
+
+      <article>
+        <span>02 / PRE-TRIAL</span>
+        <h3>The case is prepared.</h3>
+        <p>
+          The parties and the court address matters that can help prepare
+          the case for trial.
+        </p>
+      </article>
+
+      <article>
+        <span>03 / TRIAL</span>
+        <h3>Evidence is presented.</h3>
+        <p>
+          The prosecution and defense present their evidence and arguments
+          according to the rules of procedure.
+        </p>
+      </article>
+
+      <article>
+        <span>04 / JUDGMENT</span>
+        <h3>The court decides.</h3>
+        <p>
+          After considering the evidence, the court issues its judgment.
+        </p>
+      </article>
+
+      <article>
+        <span>05 / APPEAL</span>
+        <h3>A decision may be reviewed.</h3>
+        <p>
+          When allowed by law, a party may seek review by a higher court.
+        </p>
+      </article>
+
+      <article>
+        <span>06 / DECISION</span>
+        <h3>The case moves forward.</h3>
+        <p>
+          The court's decision is handled according to applicable rules
+          and procedures.
+        </p>
+      </article>
+
+    </div>
+
+
+    <div class="warning">
+      <span>!</span>
+      <div>
+        <b>Search Warrant Reminder</b>
+        <p>
+          Search warrants must comply with constitutional and legal requirements.
+          Their issuance is subject to the rules provided by law.
+        </p>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- JUDGMENT -->
+  <section class="section dark" id="judgment">
+
+    <div class="section-head light">
+      <div>
+        <span class="section-no">05 / JUDGMENT</span>
+        <h2>When the court<br>reaches a verdict.</h2>
+      </div>
+
+      <p class="section-desc">
+        After evaluating the evidence and applying the law, the court may
+        issue a judgment of conviction or acquittal.
+      </p>
+    </div>
+
+
+    <div class="judgment-grid">
+
+      <article class="judgment-card">
+        <div class="j-icon">✓</div>
+        <span class="section-no">OUTCOME 01</span>
+        <h3>Conviction</h3>
+        <p>
+          A judgment of conviction means that the court finds the accused
+          guilty based on the required legal standard.
+        </p>
+      </article>
+
+      <article class="judgment-card">
+        <div class="j-icon">○</div>
+        <span class="section-no">OUTCOME 02</span>
+        <h3>Acquittal</h3>
+        <p>
+          An acquittal means that the accused is found not guilty
+          under the applicable law and evidence.
+        </p>
+      </article>
+
+    </div>
+
+  </section>
+
+
+  <!-- QUIZ -->
+  <section class="section quiz-section" id="quiz">
+
+    <div class="quiz-wrap">
+
+      <div class="quiz-intro">
+
+        <span class="section-no">06 / KNOWLEDGE CHECK</span>
+
+        <h2>Test what<br>you learned.</h2>
+
+        <p>
+          Answer the questions below and see how much you remember
+          about the Court Pillar and criminal proceedings.
+        </p>
+
+        <div class="progress">
+          <div id="progressBar"></div>
+        </div>
+
+        <small id="progressText">Question 1 of 8</small>
+
+      </div>
+
+
+      <div class="quiz-box">
+
+        <div class="q-number" id="questionNumber">QUESTION 01</div>
+
+        <div class="q-text" id="questionText">
+          What is the main function of the Judiciary?
+        </div>
+
+        <div class="choices" id="choices">
+
+          <button class="choice" data-index="0">
+            To interpret and apply the law
+          </button>
+
+          <button class="choice" data-index="1">
+            To create all government agencies
+          </button>
+
+          <button class="choice" data-index="2">
+            To collect taxes
+          </button>
+
+          <button class="choice" data-index="3">
+            To conduct elections
+          </button>
+
+        </div>
+
+        <p class="feedback" id="feedback"></p>
+
+        <div class="quiz-actions">
+          <button class="btn primary" id="nextBtn">Next Question →</button>
+          <button class="btn ghost hidden" id="retryBtn">Try Again</button>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- REFERENCES -->
+  <section class="section" id="references">
+
+    <div class="section-head">
+      <div>
+        <span class="section-no">07 / REFERENCES</span>
+        <h2>Sources &<br>learning materials.</h2>
+      </div>
+
+      <p class="section-desc">
+        References are included to acknowledge the learning materials
+        used in preparing this educational website.
+      </p>
+    </div>
+
+
+    <div class="reference-grid">
+
+      <article>
+        <span>COURSE MATERIAL</span>
+        <h3>CLJ 1 Midterm Coverage</h3>
+        <p>
+          Introduction to Philippine Criminal Justice System.
+          Yllana Bay View College, College of Criminal Justice Education.
+        </p>
+      </article>
+
+      <article>
+        <span>BOOK</span>
+        <h3>From Crime to Justice</h3>
+        <p>
+          Donato, Lea M., PhD CJ; Canutap, Joy Nicole C., RCrim;
+          Abuan III, Placido V., RCrim. Wiseman's Book Trading, Inc., 2025.
+        </p>
+      </article>
+
+      <article>
+        <span>LAW</span>
+        <h3>1987 Philippine Constitution</h3>
+        <p>
+          Article VIII, Section 1 — Judicial Power.
+        </p>
+      </article>
+
+      <article>
+        <span>REFERENCE</span>
+        <h3>CACI-AJP</h3>
+        <p>
+          Philippines Judiciary: Description of Courts / Flowchart.
+        </p>
+      </article>
+
+    </div>
+
+    <div class="note">
+      <strong>Educational Use:</strong>
+      This website was created as a student educational activity for CLJ 1.
+      For legal questions and actual cases, consult the applicable laws,
+      rules, and qualified legal professionals.
+    </div>
+
+  </section>
+
 
   <footer>
-    <p><strong>CLJ 1 • Block A3 • AY 2026–2027</strong></p>
-    <p>Educational Website Project • College of Criminal Justice Education</p>
+
+    <div>
+      <div>
+        <strong>CLJ 1 • BSCRIM BLOCK A3</strong><br>
+        Yllana Bay View College
+      </div>
+
+      <div>
+        <strong>Prepared by:</strong> Shamiah S. Tungco • President<br>
+        SY 2026–2027
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      Introduction to the Philippine Criminal Justice System • Educational Website
+    </div>
+
   </footer>
 
+
+  <button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+
   <script src="script.js"></script>
+
 </body>
 </html>
