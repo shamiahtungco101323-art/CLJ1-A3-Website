@@ -12,21 +12,52 @@ BSCRIM I - BLK A3
 SCHOOL YEAR:
 2026-2027
 
-WEBSITE COVERAGE:
-1. FIRST PRELIM - Crime, Law and Justice
-2. SECOND PRELIM - The Prosecution Pillar
-3. MIDTERM - The Court Pillar
 
-FILES:
-index.html - Main website content and structure
-style.css - Design, layout, colors, cards, responsive mobile layout
-script.js - Menu and smooth navigation
-README.txt - Website information
+ABOUT THIS WEBSITE
 
-PREPARED BY:
+This website is created as a learning material for BSCRIM
+Block A3. It contains the lessons and topics covered in
+the CLJ 1 handouts.
+
+The website is organized into three major parts:
+
+1. FIRST PRELIM
+   Historical Development and Principles of Criminal Justice
+
+2. SECOND PRELIM
+   Concepts and Philosophy of Prosecution
+
+3. MIDTERM
+   The Court Pillar
+
+
+WEBSITE FILES
+
+index.html
+- Contains the main content and structure of the website.
+
+style.css
+- Contains the design, layout, colors, fonts, cards,
+  tables, and responsive mobile design.
+
+script.js
+- Contains the website's interactive features and
+  smooth navigation.
+
+README.txt
+- Contains information about the website and its files.
+
+
+PREPARED BY
+
 TUNGCO, SHAMIAH S.
 
-CONTRIBUTORS:
+BSCRIM I - BLK A3
+SY 2026-2027
+
+
+CONTRIBUTORS
+
 Aquit
 Panit
 Delos Santos
@@ -51,5 +82,10 @@ Cadorna
 Castillio
 Dacles
 
-NOTE:
-The lesson organization and terminology in this website were based on the three uploaded CLJ 1 handouts. Some scanned portions of the PDFs were difficult to read, so wording was kept close to the readable source material rather than adding unrelated topics.
+
+PURPOSE
+
+This website is intended to help students access and review
+CLJ 1 learning materials in an organized and convenient way.
+
+It is prepared for educational and class learning purposes.
