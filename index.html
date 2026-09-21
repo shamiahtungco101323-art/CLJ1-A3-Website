@@ -1,1060 +1,284 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CLJ 1 | BSCRIM Block A3</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CLJ 1 | BSCRIM A3</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<header id="home">
-  <div class="logo">
-    Yllana Bay View College • College of Criminal Justice Education
+<header class="hero" id="home">
+  <nav class="topbar">
+    <div class="brand">CLJ 1 <span>• A3</span></div>
+    <div class="year">2026–27</div>
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+  </nav>
+
+  <div class="hero-content">
+    <p class="eyebrow">YLLANA BAY VIEW COLLEGE</p>
+    <h1>Introduction to the<br><em>Philippine Criminal<br>Justice System</em></h1>
+    <p class="hero-text">A learning website for BSCRIM Block A3 — organized from the 1st Prelim, 2nd Prelim, and Midterm handouts.</p>
+    <a href="#coverage" class="primary-btn">Start Learning</a>
+    <div class="hero-meta">
+      <span>CLJ 1</span><span>A3</span><span>2026–27</span>
+    </div>
   </div>
-
-  <h1>CLJ 1: Introduction to Philippine Criminal Justice System</h1>
-
-  <p>
-    <strong>BSCRIM I – Block A3</strong><br>
-    A detailed learning website covering the First Prelim,
-    Second Prelim, and Midterm handouts.
-  </p>
 </header>
 
-<nav>
-  <a href="#home">Home</a>
-  <a href="#prelim1">1st Prelim</a>
-  <a href="#prelim2">2nd Prelim</a>
-  <a href="#midterm">Midterm</a>
-  <a href="#review">Quick Review</a>
-  <a href="#about">About A3</a>
+<nav class="mobile-nav" id="mobileNav">
+  <a href="#home" onclick="closeMenu()">Home</a>
+  <a href="#prelim1" onclick="closeMenu()">1st Prelim</a>
+  <a href="#prelim2" onclick="closeMenu()">2nd Prelim</a>
+  <a href="#midterm" onclick="closeMenu()">Midterm</a>
+  <a href="#review" onclick="closeMenu()">Quick Review</a>
+  <a href="#about" onclick="closeMenu()">About A3</a>
 </nav>
 
 <main>
 
-<section class="hero">
+<section class="intro-section" id="coverage">
+  <p class="section-label">CLJ 1 / COVERAGE</p>
+  <h2>Learn the basics<br>of the course.</h2>
+  <p class="muted">Three learning periods are arranged below so students can move from the basic concepts of crime, law, victims and justice, to prosecution and preliminary investigation, and finally to the court pillar.</p>
 
-  <span class="badge">CLJ 1 • LEARNING MATERIAL</span>
+  <div class="coverage-grid">
+    <a class="coverage-card" href="#prelim1">
+      <span class="num">01</span>
+      <div><small>FIRST PRELIM</small><h3>Crime, Law & Justice</h3><p>Basic concepts, victims, victimless crimes, pillars of justice, and the evolution of law.</p></div>
+      <b>→</b>
+    </a>
+    <a class="coverage-card" href="#prelim2">
+      <span class="num">02</span>
+      <div><small>SECOND PRELIM</small><h3>Prosecution</h3><p>The prosecution pillar, preliminary investigation, evidence standards, NPS, and related procedures.</p></div>
+      <b>→</b>
+    </a>
+    <a class="coverage-card" href="#midterm">
+      <span class="num">03</span>
+      <div><small>MIDTERM</small><h3>The Court Pillar</h3><p>Judiciary development, courts, jurisdiction, venue, court proceedings, and judgments.</p></div>
+      <b>→</b>
+    </a>
+  </div>
+</section>
 
-  <h2>Welcome to our CLJ 1 Website</h2>
-
-  <p>
-    This website presents the lessons covered in our CLJ 1 handouts.
-    The material is arranged by examination period so students can review
-    the topics, definitions, classifications, procedures, and important
-    points in an organized way.
-  </p>
-
-  <div class="note">
-    <strong>Study reminder:</strong>
-    Read each topic completely. The sections below intentionally keep
-    detailed concepts instead of reducing the lessons into very short summaries.
+<!-- ================= FIRST PRELIM ================= -->
+<section class="lesson-section dark-section" id="prelim1">
+  <div class="section-head">
+    <p class="section-label light">01 / FIRST PRELIM</p>
+    <h2>Crime, Law<br><em>and Justice.</em></h2>
+    <p>Start with the basic ideas that explain why acts become crimes, how law operates, who may be affected by crime, and how justice is understood.</p>
   </div>
 
+  <div class="topic-list">
+    <article class="topic">
+      <div class="topic-title"><span>01</span><h3>What comes first: the Law or the Crime?</h3></div>
+      <p>The handout explains that law is something laid down, established, or decreed. It defines crime, treats of its nature, and provides for punishment. If there is no law punishing an act, the act is not treated as a crime under that law. In this sense, crime is presented as a product of law.</p>
+    </article>
+
+    <article class="topic">
+      <div class="topic-title"><span>02</span><h3>What is Crime?</h3></div>
+      <p>Crime is an act or omission punishable by public laws. The handout identifies four specific terms:</p>
+      <div class="mini-grid">
+        <div><b>Felonies</b><p>Violations of the Revised Penal Code.</p></div>
+        <div><b>Offenses under Special Laws</b><p>Violations of statutes of special laws.</p></div>
+        <div><b>Infraction / Misdemeanor</b><p>Violations of ordinances.</p></div>
+        <div><b>Delinquency</b><p>Violations committed by minor offenders.</p></div>
+      </div>
+    </article>
+
+    <article class="topic">
+      <div class="topic-title"><span>03</span><h3>Concepts of Crime, Law and Justice</h3></div>
+      <p>The 1987 Philippine Constitution provides for the distribution of the great powers of government among three branches: the Executive, Legislative, and Judiciary. These branches are co-equal and observe the separation of powers.</p>
+      <h4>Limitations on legislative power in enacting penal legislation</h4>
+      <ul>
+        <li>No ex post facto law or bill of attainder shall be enacted.</li>
+        <li><strong>Ex post facto law:</strong> makes an act done before the passage of the law punishable.</li>
+        <li><strong>Bill of attainder:</strong> a legislative act which inflicts punishment without trial.</li>
+        <li>No person shall be held to answer for a criminal offense without due process of law.</li>
+      </ul>
+    </article>
+
+    <article class="topic">
+      <div class="topic-title"><span>04</span><h3>Criminal and Victim</h3></div>
+      <p>A person who commits a crime is basically a criminal. In the criminal justice system, however, different terms may be used at different stages of the justice process depending on the person's status in the case.</p>
+      <div class="stage-list">
+        <div><b>Suspect</b><span>A person suspected of having committed the crime.</span></div>
+        <div><b>Respondent</b><span>The person involved at the prosecution level.</span></div>
+        <div><b>Accused</b><span>The person formally charged in court.</span></div>
+        <div><b>Convict</b><span>A person found guilty beyond reasonable doubt.</span></div>
+        <div><b>Prisoner</b><span>A person serving a sentence after conviction.</span></div>
+      </div>
+    </article>
+
+    <article class="topic">
+      <div class="topic-title"><span>05</span><h3>Types of Victim</h3></div>
+      <div class="mini-grid three">
+        <div><b>Primary Victim</b><p>The person who directly experiences the harm of the crime. Example: a rape victim.</p></div>
+        <div><b>Secondary Victim</b><p>Individuals related to or connected with the primary victim, such as parents, cousins, or siblings.</p></div>
+        <div><b>Tertiary Victim</b><p>Other individuals or persons who may be affected by what happened to the victim or by the consequences of the crime.</p></div>
+      </div>
+    </article>
+
+    <article class="topic">
+      <div class="topic-title"><span>06</span><h3>Victimless Crimes</h3></div>
+      <p>These are crimes against the law where the individual who participates may have consented to the activity. The handout notes that there is no private offended party in the usual sense.</p>
+      <div class="tag-row">
+        <span>Gambling</span><span>Prostitution</span><span>Possession of Firearms</span><span>Drug-related offenses</span>
+      </div>
+    </article>
+
+    <article class="topic">
+      <div class="topic-title"><span>07</span><h3>Five Pillars of Criminal Justice</h3></div>
+      <div class="pillar-grid">
+        <div><b>Law Enforcement</b><p>Deals with the enforcement and initial response to violations of law.</p></div>
+        <div><b>Prosecution</b><p>Evaluates complaints and prosecutes criminal actions.</p></div>
+        <div><b>Courts</b><p>Determine the legal issues and the guilt or innocence of the accused.</p></div>
+        <div><b>Corrections</b><p>Concerned with persons who are under correctional custody or serving sentences.</p></div>
+        <div><b>Community</b><p>The community is part of the wider criminal justice process and is affected by crime and justice.</p></div>
+      </div>
+    </article>
+
+    <article class="topic">
+      <div class="topic-title"><span>08</span><h3>Concepts of Justice</h3></div>
+      <div class="justice-list">
+        <div><b>Procedural Justice</b><p>Fairness in the process, regardless of whether a person is rich or poor.</p></div>
+        <div><b>Distributive Justice</b><p>Concerned with the fair distribution of law, benefits, burdens, and penalties.</p></div>
+        <div><b>Restorative Justice</b><p>Focuses on restoring or repairing the harm caused by an offense.</p></div>
+      </div>
+    </article>
+
+    <article class="topic">
+      <div class="topic-title"><span>09</span><h3>Evolution of Law</h3></div>
+      <div class="timeline">
+        <div><b>Code of Hammurabi</b><p>One of the first known bodies of law. It was promulgated by King Hammurabi of ancient Babylon and engraved on stone tablets. It dealt with issues including theft, ownership, sexual relationships, and violence.</p></div>
+        <div><b>Roman Law</b><p>Derived from the Twelve Tables, a collection of basic rules related to family, religion, and economic life.</p></div>
+        <div><b>Common Law</b><p>Its origin is traced to early English society. It developed from social customs, rules, and practices.</p></div>
+        <div><b>Magna Carta</b><p>Signed on June 15, 1215 by King John of England. The handout describes it as guaranteeing basic liberties for British citizens.</p></div>
+        <div><b>Greek Laws</b><p>Contributed to ideas about law through the thoughts of philosophers such as Socrates, Plato, and Aristotle.</p></div>
+        <div><b>Canon Law</b><p>Also known as Ecclesiastical Law and adopted for the government of Christian organizations.</p></div>
+        <div><b>Germanic Law</b><p>A family of customary laws from Germanic tribes.</p></div>
+        <div><b>Philippine Laws</b><p>For early Filipinos, laws were written and unwritten. Written laws were decreed and codified, while unwritten laws were based on customs and traditions. The handout also discusses the Code of Kalantiaw as an alleged pre-Spanish code associated with Datu Sumakwel of Panay.</p></div>
+      </div>
+    </article>
+
+    <article class="topic">
+      <div class="topic-title"><span>10</span><h3>Search Warrant and Warrantless Search</h3></div>
+      <p>The handout defines a search warrant as an order in writing issued in the name of the People of the Philippines, signed by a judge and directed to a peace officer, commanding the officer to search for personal property described in the warrant and bring it before the court. It has a validity period of ten (10) days and can be served only once within its validity period.</p>
+      <h4>Personal property that may be seized</h4>
+      <ul>
+        <li>Subject of the offense.</li>
+        <li>Stolen or embezzled property and other proceeds or fruits of the offense.</li>
+        <li>Property used or intended to be used as the means of committing an offense.</li>
+      </ul>
+      <h4>Circumstances of warrantless search listed in the handout</h4>
+      <ol>
+        <li>Warrantless search incidental to a lawful arrest.</li>
+        <li>Seizure of evidence in plain view.</li>
+        <li>Search of a moving vehicle.</li>
+        <li>Consented warrantless search.</li>
+        <li>Customs search.</li>
+        <li>Stop and frisk search.</li>
+        <li>Exigent and emergency circumstances.</li>
+      </ol>
+    </article>
+
+    <article class="topic">
+      <div class="topic-title"><span>11</span><h3>Instigation vs. Entrapment</h3></div>
+      <div class="compare">
+        <div><h4>Instigation</h4><p>The police officer induces a person to commit a crime that otherwise would not be committed. The criminal idea comes from the arresting officer. The handout states that this is not valid and gives a sell-bust operation as an example.</p></div>
+        <div><h4>Entrapment</h4><p>The arresting officer devises ways and means to catch or apprehend a person who has already committed or is already disposed to commit the crime. The criminal mind originates from the accused. The handout gives a buy-bust operation as an example.</p></div>
+      </div>
+    </article>
+
+    <article class="topic">
+      <div class="topic-title"><span>12</span><h3>Other Law Enforcement Agencies</h3></div>
+      <ul class="agency-list">
+        <li><b>National Bureau of Investigation (NBI)</b> — a highly trained investigative body, national in scope, under the Department of Justice.</li>
+        <li><b>Philippine Coast Guard (PCG)</b> — an armed and uniformed service attached to the Department of Transportation; the handout describes its role concerning unsafe foreign vessels.</li>
+        <li><b>Philippine Center on Transnational Crime (PCTC)</b> — formulates and implements a concerted program for the prevention and control of transnational crime and is under the direct supervision of the Office of the President.</li>
+        <li><b>Department of Environment and Natural Resources (DENR)</b> — tasked with enforcement of environmental laws.</li>
+        <li><b>Bureau of Immigration (BI)</b> — tasked with enforcement of immigration laws.</li>
+        <li><b>Philippine Drug Enforcement Agency (PDEA)</b> — primarily concerned with enforcement of drug laws and under the Office of the President.</li>
+      </ul>
+    </article>
+  </div>
 </section>
 
-
-<!-- FIRST PRELIM -->
-
-<section id="prelim1">
-
-<h2 class="section-title">
-  FIRST PRELIM — Historical Development and Principles of Criminal Justice
-</h2>
-
-
-<details class="topic" open>
-
-<summary>1. Concept of Crime and Justice</summary>
-
-<div class="inside">
-
-<h3>What comes first, the law or the crime?</h3>
-
-<ul>
-
-<li>
-<strong>Law</strong> is that which is laid down, established or decreed.
-</li>
-
-<li>
-Most laws are penal in nature, meaning they define crime,
-treat of their nature, and provide for their punishment.
-</li>
-
-<li>
-<strong>Nullum crimen nulla poena sine lege</strong>
-— there is no crime where there is no law punishing it.
-</li>
-
-<li>
-Thus, crime is a product of the law.
-</li>
-
-</ul>
-
-
-<div class="quote">
-
-“Nullum crimen nulla poena sine lege” means that an act cannot be
-treated as a crime when there is no law punishing it.
-
-</div>
-
-
-<h3>What is Crime?</h3>
-
-<p>
-<strong>Crime is an act or omission punishable by public laws.</strong>
-</p>
-
-
-<h3>Four specific terms of crime</h3>
-
-<ol>
-
-<li>
-<strong>Felonies</strong> — violations of the Revised Penal Code.
-</li>
-
-<li>
-<strong>Offenses</strong> — violations of statutes or Special Laws.
-</li>
-
-<li>
-<strong>Infraction or Misdemeanor</strong> — violations of ordinances.
-</li>
-
-<li>
-<strong>Delinquency</strong> — violations committed by minor offenders.
-</li>
-
-</ol>
-
-
-<h3>Concepts of crime, law and justice</h3>
-
-<p>
-The 1987 Philippine Constitution provided the distribution of the great
-powers of government to three branches:
-<strong>executive, legislative and judiciary</strong>.
-These branches are co-equal and observe separation of powers.
-</p>
-
-
-<h3>Limitations on the legislative branch in enacting penal legislation</h3>
-
-<ol>
-
-<li>
-No <strong>ex post facto law</strong> or
-<strong>bill of attainder</strong> shall be enacted.
-</li>
-
-<li>
-<strong>Ex post facto law</strong> makes an act done before the passage
-of the law punishable.
-</li>
-
-<li>
-<strong>Bill of attainder</strong> is a legislative act which inflicts
-punishment without trial.
-</li>
-
-<li>
-No person shall be held to answer for a criminal offense without
-due process of law.
-</li>
-
-</ol>
-
-</div>
-
-</details>
-
-
-<details class="topic">
-
-<summary>2. Criminal and Victim</summary>
-
-<div class="inside">
-
-<h3>Criminal</h3>
-
-<p>
-Any person who commits a crime is basically a criminal.
-In the criminal justice system, different terms are used in every
-stage or level of the justice system.
-</p>
-
-
-<h4>Criminological sense</h4>
-
-<p>
-A person who committed a crime regardless of whether it was reported
-or referred.
-</p>
-
-
-<h4>Legal sense</h4>
-
-<p>
-A person who was found guilty beyond reasonable doubt.
-</p>
-
-
-<h3>Terms used at different stages</h3>
-
-<ol>
-
-<li>
-<strong>Person of Interest</strong> — when there are several suspicious persons.
-</li>
-
-<li>
-<strong>Suspect</strong> — when there is one suspected person left.
-</li>
-
-<li>
-<strong>Respondent</strong> — when the matter is within the level of prosecution.
-</li>
-
-<li>
-<strong>Accused</strong> — when the case is already pending before the court.
-</li>
-
-<li>
-<strong>Persons Deprived of Liberty</strong> — persons under correctional facilities.
-</li>
-
-<li>
-<strong>Ex-convict or Balik-bayan</strong> — when they are back in the community.
-</li>
-
-</ol>
-
-
-<h3>Victim</h3>
-
-<p>
-Victim is the scientific study of the extent, nature and causes of
-criminal victimization, its consequences for the persons involved
-and the reactions of society, particularly the police and the criminal
-justice system, as well as voluntary workers and professional helpers.
-</p>
-
-
-<h3>Types of Victim</h3>
-
-<table class="compare">
-
-<tr>
-<th>Type</th>
-<th>Description</th>
-<th>Example</th>
-</tr>
-
-<tr>
-<td>Primary Victim</td>
-<td>The person who experiences the crime first-hand.</td>
-<td>A person directly victimized by a crime.</td>
-</tr>
-
-<tr>
-<td>Secondary Victim</td>
-<td>Individuals who experience or are related to the primary victim.</td>
-<td>Parent, cousin, sibling or relative.</td>
-</tr>
-
-<tr>
-<td>Tertiary Victim</td>
-<td>Individuals who watch or read the story and are affected by it.</td>
-<td>People affected by hearing or reading about the crime.</td>
-</tr>
-
-</table>
-
-
-<h3>Victimless Crimes</h3>
-
-<p>
-These are crimes against the law but harm the individual who consented
-to engage in them. There is no private offended party in these crimes.
-</p>
-
-<ul>
-
-<li>Gambling</li>
-<li>Prostitution</li>
-<li>Possession of firearms</li>
-<li>Drug-related cases</li>
-
-</ul>
-
-</div>
-
-</details>
-
-
-<details class="topic">
-
-<summary>3. Evolution of Law</summary>
-
-<div class="inside">
-
-<h3>Code of Hammurabi</h3>
-
-<ul>
-
-<li>One of the first known bodies of law.</li>
-
-<li>
-Promulgated by King Hammurabi of ancient Babylon.
-</li>
-
-<li>
-Engraved on stone tablets and dealt with theft,
-ownership, sexual relationships and violence.
-</li>
-
-</ul>
-
-
-<h3>Roman Law</h3>
-
-<p>
-Derived from the Twelve Tables, a collection of basic rules related
-to family, religion and economic life.
-</p>
-
-
-<h3>Common Law</h3>
-
-<ul>
-
-<li>
-Its origin is traced from early English society.
-</li>
-
-<li>
-A body of unwritten legal principles created from social customs,
-rules and practices.
-</li>
-
-</ul>
-
-
-<h3>The Magna Carta</h3>
-
-<ul>
-
-<li>
-Signed on June 15, 1215 by King John of England.
-</li>
-
-<li>
-It guarantees basic liberties for British citizens.
-</li>
-
-</ul>
-
-
-<h3>Greek Laws</h3>
-
-<p>
-Contributed to Western thoughts about law through ideas of philosophers
-such as Socrates, Plato and Aristotle.
-</p>
-
-
-<h3>Canon Law</h3>
-
-<ul>
-
-<li>Also known as Ecclesiastical Law.</li>
-
-<li>
-Adopted for the government of the Christian organization and its members.
-</li>
-
-</ul>
-
-
-<h3>Germanic Law</h3>
-
-<p>
-A family of customary laws from the Germanic tribes.
-</p>
-
-
-<h3>Philippine Laws</h3>
-
-<ul>
-
-<li>
-For early Filipinos, laws were both written and unwritten.
-</li>
-
-<li>
-Written laws were decreed and codified, while unwritten laws were
-based on customs and traditions.
-</li>
-
-</ul>
-
-
-<h3>Maragtas Code</h3>
-
-<ul>
-
-<li>A written code in the pre-Spanish era.</li>
-
-<li>
-Described in the handout as the oldest body of laws in the Philippines.
-</li>
-
-<li>
-Written by Datu Sumakwel of Panay in 1250 A.D.
-</li>
-
-</ul>
-
-
-<h3>Kalantiaw Code</h3>
-
-<ul>
-
-<li>
-Described in the handout as the second oldest legal code in the Philippines.
-</li>
-
-<li>
-Written by Datu Kalantiaw of Panay in 1433 A.D.
-</li>
-
-</ul>
-
-</div>
-
-</details>
-
-
-<details class="topic">
-
-<summary>4. Justice and the Criminal Justice System</summary>
-
-<div class="inside">
-
-<h3>Definition of Justice</h3>
-
-<p>
-Justice is the act of rendering what are due and treating persons equally.
-These persons must, however, fall within the same classification.
-</p>
-
-
-<h3>Justice under the 1987 Philippine Constitution</h3>
-
-<p>
-Under Section 1, Article III of the 1987 Philippine Constitution,
-no person shall be deprived of life, liberty or property without
-due process of law, nor shall any person be denied equal protection
-of the laws.
-</p>
-
-
-<h3>Essence / Types of Justice</h3>
-
-<ol>
-
-<li>
-
-<strong>Procedural Justice</strong> —
-focuses on the fairness of the processes by which decisions are made.
-Fair, unbiased and respectful legal processes enhance public trust
-and compliance with the law.
-
-</li>
-
-
-<li>
-
-<strong>Distributive Justice</strong> —
-pertains to the fair allocation of resources and penalties;
-the distribution of burdens and benefits should be equitable and
-based on principles of fairness and equality.
-
-</li>
-
-
-<li>
-
-<strong>Restorative Justice</strong> —
-emphasizes repairing the harm caused by criminal behavior and fostering
-reconciliation between offenders and victims. It involves stakeholders
-such as victims, offenders and the community in dialogue to address
-harm, seek accountability and restore relationships.
-
-</li>
-
-</ol>
-
-
-<h3>Kinds of Due Process</h3>
-
-<ul>
-
-<li>
-
-<strong>Procedural due process</strong> —
-ensures procedures and methods used by government before depriving
-a person of life, liberty or property are fair and just.
-Essential elements include notice, hearing and judgment.
-
-</li>
-
-<li>
-
-<strong>Substantive due process</strong> —
-protects individuals from unreasonable, oppressive or arbitrary
-laws, regulations and policies.
-
-</li>
-
-</ul>
-
-
-<h3>Criminal Justice System</h3>
-
-<p>
-The criminal justice system is the machinery used by the state
-to enforce rules of conduct necessary for the protection of life
-and property and to maintain peace and order.
-</p>
-
-<p>
-<strong>As a social institution:</strong>
-CJS attempts to meet society's needs for law and order.
-</p>
-
-<p>
-<strong>As a system:</strong>
-CJS depends on due process involving the five pillars.
-</p>
-
-
-<h3>Five Pillars</h3>
-
-<div class="flow">
-
-<span>Law Enforcement</span>
-<b>→</b>
-
-<span>Prosecution</span>
-<b>→</b>
-
-<span>Court</span>
-<b>→</b>
-
-<span>Correction</span>
-<b>→</b>
-
-<span>Community</span>
-
-</div>
-
-
-<h3>Comparative Criminal Justice</h3>
-
-<p>
-This looks into different models of countries to investigate and
-evaluate a rational system of justice in terms of criminal justice
-process, culture and institutions.
-</p>
-
-</div>
-
-</details>
-
-</section>
-
-
-
-<!-- SECOND PRELIM -->
-
-<section id="prelim2">
-
-<h2 class="section-title">
-SECOND PRELIM — Concepts and Philosophy of Prosecution
-</h2>
-
-
-<details class="topic" open>
-
-<summary>1. Prosecution</summary>
-
-<div class="inside">
-
-<h3>Meaning of Prosecution</h3>
-
-<p>
-Prosecution is the institution or process of bringing a criminal
-action before the court for the determination of the guilt or innocence
-of the accused.
-</p>
-
-
-<h3>Concept of Prosecution</h3>
-
-<p>
-The prosecution is an important part of the criminal justice system.
-It works with law enforcement agencies in evaluating criminal complaints,
-examining evidence and determining whether a criminal action should
-be filed.
-</p>
-
-
-<h3>Purpose of Prosecution</h3>
-
-<ul>
-
-<li>
-To determine whether there is sufficient basis to prosecute a person.
-</li>
-
-<li>
-To represent the State in criminal proceedings.
-</li>
-
-<li>
-To present evidence before the court.
-</li>
-
-<li>
-To protect the interests of justice.
-</li>
-
-</ul>
-
-</div>
-
-</details>
-
-
-<details class="topic">
-
-<summary>2. Prosecutor</summary>
-
-<div class="inside">
-
-<h3>Role of the Prosecutor</h3>
-
-<ul>
-
-<li>Receives and evaluates criminal complaints.</li>
-
-<li>
-Examines the evidence submitted in support of a complaint.
-</li>
-
-<li>
-Conducts proceedings required by law.
-</li>
-
-<li>
-Determines whether the evidence supports the filing of a criminal action.
-</li>
-
-<li>
-Represents the State in criminal proceedings before the court.
-</li>
-
-<li>
-Presents evidence and arguments during the prosecution of a case.
-</li>
-
-</ul>
-
-
-<h3>Prosecution and Law Enforcement</h3>
-
-<p>
-Law enforcement officers investigate reported offenses, gather information,
-preserve evidence and identify persons who may have committed an offense.
-The prosecutor performs the legal evaluation required for prosecution.
-</p>
-
-<p>
-Cooperation between investigators and prosecutors is important because
-criminal cases require evidence that is legally sufficient and properly
-presented.
-</p>
-
-</div>
-
-</details>
-
-
-<details class="topic">
-
-<summary>3. Preliminary Investigation</summary>
-
-<div class="inside">
-
-<h3>Meaning</h3>
-
-<p>
-Preliminary investigation is a proceeding to determine whether there is
-sufficient ground to engender a well-founded belief that a crime has
-been committed and that the respondent is probably guilty thereof and
-should be held for trial.
-</p>
-
-
-<h3>Purpose of Preliminary Investigation</h3>
-
-<ol>
-
-<li>
-To determine whether a criminal case should be filed in court.
-</li>
-
-<li>
-To protect persons from the inconvenience and expense of a trial when
-the evidence does not support prosecution.
-</li>
-
-<li>
-To determine whether the evidence gives sufficient basis for holding
-the respondent for trial.
-</li>
-
-<li>
-To allow the parties to present their respective sides according to
-the applicable procedure.
-</li>
-
-</ol>
-
-</div>
-
-</details>
-
-
-<details class="topic">
-
-<summary>4. Investigation and Prosecution</summary>
-
-<div class="inside">
-
-<div class="compare-box">
-
-<div>
-
-<h3>Investigation</h3>
-
-<p>
-Primarily concerns the gathering, preservation and development of
-information and evidence relating to an alleged offense.
-</p>
-
-</div>
-
-
-<div>
-
-<h3>Prosecution</h3>
-
-<p>
-Concerns the legal evaluation and presentation of a criminal case
-in behalf of the State.
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</details>
-
-</section>
-
-
-
-<!-- MIDTERM -->
-
-<section id="midterm">
-
-<h2 class="section-title">
-MIDTERM — The Court Pillar
-</h2>
-
-
-<details class="topic" open>
-
-<summary>1. The Court</summary>
-
-<div class="inside">
-
-<h3>What is a Court?</h3>
-
-<p>
-A court is a body to which the public administration of justice
-is delegated. It is a tribunal or forum established by law and
-authorized to hear and determine cases at the appropriate time
-and place.
-</p>
-
-<p>
-In criminal cases, the court determines the issues presented before
-it according to the Constitution, laws, rules and evidence properly
-submitted in the proceedings.
-</p>
-
-</div>
-
-</details>
-
-
-<details class="topic">
-
-<summary>2. Historical Development of the Judiciary</summary>
-
-<div class="inside">
-
-<h3>Judicial System of the Pre-Spanish Filipinos</h3>
-
-<p>
-Before Spanish colonization, there were no written laws in the
-modern sense. Rules were derived from customs, usages and traditions.
-Judicial authority was exercised by the datu, who acted as a judge
-in settling disputes.
-</p>
-
-
-<h3>Judicial System under the Spanish Regime</h3>
-
-<p>
-During the Spanish period, the judicial system was organized under
-Spanish colonial authority. King Philip II of Spain established the
-Real Audiencia de Manila, which performed judicial as well as
-executive and administrative functions.
-</p>
-
-
-<h3>Judicial System under the American Occupation</h3>
-
-<p>
-The judicial system was reorganized during the American period.
-Existing laws and courts were recognized and new institutions were
-established as part of the development of the Philippine judicial system.
-</p>
-
-
-<h3>Establishment of the Supreme Court of the Philippines</h3>
-
-<p>
-Act No. 136, enacted in 1901, provided for the organization of the
-courts in the Philippine Islands and formally established the
-Supreme Court of the Philippines.
-</p>
-
-
-<h3>Supreme Court under the 1973 Constitution</h3>
-
-<p>
-The 1973 Constitution changed several aspects of the governmental
-system, including the organization of the judiciary. The membership
-of the Supreme Court was increased to fifteen:
-one Chief Justice and fourteen Associate Justices.
-</p>
-
-
-<h3>Supreme Court under the Revolutionary Government</h3>
-
-<p>
-On March 25, 1986, President Corazon Aquino abolished the 1973
-Constitution through Proclamation No. 3 and put in place a provisional
-constitutional arrangement. Provisions concerning the judiciary were
-adopted during this transitional period.
-</p>
-
-
-<h3>Supreme Court under the 1987 Constitution</h3>
-
-<p>
-The 1987 Constitution continues to vest judicial power in the Supreme
-Court and such lower courts as may be established by law. Judicial
-power includes the duty of the courts to settle actual controversies
-involving rights that are legally demandable and enforceable.
-</p>
-
-</div>
-
-</details>
-
-
-<details class="topic">
-
-<summary>3. Judicial Power</summary>
-
-<div class="inside">
-
-<h3>Meaning of Judicial Power</h3>
-
-<p>
-Judicial power includes the duty of the courts of justice to settle
-actual controversies involving rights which are legally demandable
-and enforceable.
-</p>
-
-<p>
-It also includes the determination of whether or not there has been
-a grave abuse of discretion amounting to lack or excess of jurisdiction
-on the part of any branch or instrumentality of the Government.
-</p>
-
-
-<h3>Power of Judicial Review</h3>
-
-<p>
-Judicial review is the power of the Supreme Court to determine whether
-laws passed by Congress and acts of the President are in accordance
-with the Constitution when the constitutional issue is properly
-raised before the Court.
-</p>
-
-</div>
-
-</details>
-
-
-<details class="topic">
-
-<summary>4. Types of Courts</summary>
-
-<div class="inside">
-
-<h3>Supreme Court</h3>
-
-<p>
-The Supreme Court is the highest court in the Philippines.
-It is composed of the Chief Justice and fourteen Associate Justices.
-It is the final arbiter of judicial issues and may sit en banc
-or in divisions as provided by the Constitution and law.
-</p>
-
-
-<h3>Court of Appeals</h3>
-
-<p>
-The Court of Appeals is an appellate court that reviews decisions
-brought before it from the lower courts and other bodies as provided
-by law. It is composed of a Presiding Justice and Associate Justices.
-</p>
-
-
-<h3>Regional Trial Court</h3>
-
-<p>
-Regional Trial Courts exercise the jurisdiction granted to them by
-law, including original and appellate jurisdiction over specified
-civil and criminal cases.
-</p>
-
-
-<h3>Metropolitan Trial Court</h3>
-
-<p>
-Metropolitan Trial Courts exercise the jurisdiction assigned by law
-in metropolitan areas.
-</p>
-
-
-<h3>Municipal Trial Court</h3>
-
-<p>
-Municipal Trial Courts exercise the jurisdiction assigned by law
-in municipalities and other areas covered by their respective courts.
-</p>
-
-
-<h3>Municipal Circuit Trial Court</h3>
-
-<p>
-Municipal Circuit Trial Courts serve areas composed of municipalities
-grouped together pursuant to law and exercise the jurisdiction
-provided by law.
-</p>
-
-</div>
-
-</details>
-
-
-<details class="topic">
-
-<summary>5. Jurisdiction and Venue</summary>
-
-<div class="inside">
-
-<h3>Jurisdiction</h3>
-
-<p>
-Jurisdiction refers to the power or authority given by law to a court
-or tribunal to hear and decide a case and to enforce its judgment.
-</p>
-
-
-<h3>Venue</h3>
-
-<p>
-Venue refers to the particular geographical area in which a court
-with jurisdiction may hear or determine a case.
-</p>
-
-
-<h3>Groups of Jurisdiction</h3>
-
-<ol>
-
-<li>
-<strong>Criminal Jurisdiction</strong> —
-power and authority to hear cases involving criminal acts.
-</li>
-
-<li>
-<strong>Civil Jurisdiction</strong> —
-power and authority to hear cases which are civil in nature.
-</li>
-
-</ol>
-
-
-<h3>Classification of Jurisdiction</h3>
-
-<ol>
-
-<li>
-<strong>General Jurisdiction</strong> —
-power to adjudicate controversies except those expressly withheld
-from the plenary powers of the court.
-</li>
-
-<li>
-<strong>Special/Limited Jurisdiction</strong> —
-power to hear only cases provided by governing law.
-</li>
-
-<li>
-<strong>Original Jurisdiction</strong> —
-power of a court to take judicial cognizance of a case instituted
-for judicial action for the first time.
-</li>
-
-<li>
-<strong>Appellate Jurisdiction</strong> —
-power of a higher court to review a f
+<!-- ================= SECOND PRELIM ================= -->
+<section class="lesson-section" id="prelim2">
+  <div class="section-head">
+    <p class="section-label">02 / SECOND PRELIM</p>
+    <h2>The Prosecution<br><em>Pillar.</em></h2>
+    <p>The prosecution is the second pillar of the criminal justice system. This section follows the handout's discussion of prosecution and preliminary investigation.</p>
+  </div>
+
+  <div class="topic-list">
+    <article class="topic">
+      <div class="topic-title"><span>01</span><h3>What is Prosecution?</h3></div>
+      <p>Prosecution is the process wherein an accusation is brought before a court of justice to determine the guilt or innocence of the accused. It ensures that persons are tried in a court of law and sentenced if convicted.</p>
+      <p>The prosecution pillar is primarily concerned with the investigation of the complaint filed before its office.</p>
+    </article>
+
+    <article class="topic">
+      <div class="topic-title"><span>02</span><h3>Three Kinds of Prosecution</h3></div>
+      <div class="mini-grid three">
+        <div><b>Accusatorial System</b><p>An adversarial system involving two contending parties, the accuser and the accused. The victim or representative has the obligation of finding and presenting evidence to the court.</p></div>
+        <div><b>Inquisitorial System</b><p>Investigation and prosecution are left in the hands of the government's prosecutorial arms.</p></div>
+        <div><b>Mixed System</b><p>A combination of the accusatorial and inquisitorial systems. The handout identifies this as the system adopted in the Philippine setting.</p></div>
+      </div>
+    </article>
+
+    <article class="topic">
+      <div class="topic-title"><span>03</span><h3>What does “Prosecute” mean?</h3></div>
+      <p>To prosecute means to officially accuse someone of committing an offense in a court of law, or, for a lawyer, to try to prove that the person accused of committing a crime is guilty of that crime.</p>
+    </article>
+
+    <article class="topic">
+      <div class="topic-title"><span>04</span><h3>Who are Prosecutors?</h3></div>
+      <p>Prosecutors are charged with addressing violations of criminal law and promoting public safety. In carrying out these responsibilities, they must also bear in mind their role as ministers of justice and consider the rights, needs, and interests of members of the community, including victims and individuals charged with criminal conduct.</p>
+    </article>
+
+    <article class="topic">
+      <div class="topic-title"><span>05</span><h3>Who must prosecute criminal action?</h3></div>
+      <p>All criminal cases commenced by complaint or information shall be prosecuted under the direction and control of the public prosecutor. Private prosecutors may be allowed to prosecute when they are under the direction and supervision of the public prosecutor.</p>
+    </article>
+
+    <article class="topic">
+      <div class="topic-title"><span>06</span><h3>Role and Functions of Prosecutors</h3></div>
+      <p>The purpose of a criminal action is to determine the penal responsibility of the accused. The handout explains that, because the People of the Philippines are the offended party in a criminal case, the interest of the private complainant is generally limited to civil liability.</p>
+      <ul>
+        <li>Evaluate police findings referred to them and complaints filed directly with their office.</li>
+        <li>File the corresponding information or criminal complaints in the proper courts based on their evaluation of the evidence.</li>
+        <li>Prosecute offenders in court in the name of the People of the Philippines.</li>
+      </ul>
+    </article>
+
+    <article class="topic">
+      <div class="topic-title"><span>07</span><h3>Relationship of the Prosecutor with Investigating Agencies and Courts</h3></div>
+      <p>The prosecutor's role at the initial stage is to establish that a crime has probably been committed and that there is a basis to proceed. This requires close coordination with investigating agencies such as the Philippine National Police, National Bureau of Investigation, and quasi-judicial bodies empowered to conduct investigations.</p>
+      <p>The handout emphasizes coordination between prosecutors and police so that evidence collected can stand up to judicial scrutiny. Courts rely heavily on evidence submitted by the prosecution panel, while the panel must ensure that required evidence is available, properly stored, and that there are no undue delays that could affect the hearing schedule.</p>
+    </article>
+
+    <article class="topic">
+      <div class="topic-title"><span>08</span><h3>Preliminary Investigation</h3></div>
+      <p>Preliminary investigation is the stage of inquiry or proceeding used to determine whether there is sufficient ground to engender a well-founded belief that a crime has been committed and that the respondent is probably guilty and should be held for trial.</p>
+      <h4>Purposes</h4>
+      <ol>
+        <li>Determine whether a crime has been committed and whether there is sufficient ground to believe that the respondent is probably guilty and should be held for trial.</li>
+        <li>Protect the accused from the inconvenience, expense, and burden of defending himself or herself in a formal trial when reasonable probability of guilt has not first been ascertained.</li>
+        <li>Secure the innocent against hasty, malicious, and oppressive prosecution and an open and public accusation.</li>
+        <li>Protect the State from useless and expensive trials when the evidence does not support prosecution.</li>
+      </ol>
+    </article>
+
+    <article class="topic">
+      <div class="topic-title"><span>09</span><h3>Coverage of Preliminary Investigation</h3></div>
+      <p>The handout discusses the 2024 Department of Justice–National Prosecution Service Rules on Preliminary Investigations and Inquest Proceedings. It states that preliminary investigation proceedings shall be required for crimes or offenses where the penalty prescribed by law is six (6) years and one (1) day without regard to fine, subject to the rules and exceptions described in the handout.</p>
+      <p>The handout also notes that the prosecutor may dismiss a complaint, with the required approval, when there is no prima facie evidence with reasonable certainty of conviction.</p>
+    </article>
+
+    <article class="topic">
+      <div class="topic-title"><span>10</span><h3>Probable Cause and Reasonable Certainty of Conviction</h3></div>
+      <div class="compare">
+        <div><h4>Probable Cause</h4><p>Under the traditional preliminary investigation standard described in the handout, it refers to a well-founded belief that a crime has been committed and that the respondent is probably guilty and should be held for trial.</p></div>
+        <div><h4>Reasonable Certainty of Conviction</h4><p>The handout describes this as a higher evidentiary standard. It exists when a prima facie case is established by t
