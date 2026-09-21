@@ -53,11 +53,7 @@ PREPARED BY
 BSCRIM I - BLK A3
 SY 2026-2027
 
-
-
-CONTRIBUTORS
-
-TUNGCO, SHAMIAH S.
+Tungco
 Aquit
 Panit
 Delos Santos
@@ -81,6 +77,11 @@ Bulandrina
 Cadorna
 Castillio
 Dacles
+Gasco
+Mongcada
+Espacio
+Camancho
+Brade
 
 
 PURPOSE
