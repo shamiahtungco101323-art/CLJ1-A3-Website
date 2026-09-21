@@ -15,6 +15,7 @@ body {
   line-height: 1.7;
 }
 
+
 /* HEADER */
 
 header {
@@ -432,6 +433,188 @@ section {
 }
 
 
+/* ================= CHALLENGES ================= */
+
+.challenge-section {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 80px 0;
+  text-align: center;
+  scroll-margin-top: 70px;
+}
+
+.challenge-section .section-label {
+  color: #70409a;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.challenge-section h2 {
+  color: #4c2166;
+  font-size: 45px;
+  line-height: 1.15;
+  margin-bottom: 15px;
+}
+
+.challenge-section h2 em {
+  color: #8146a5;
+  font-style: normal;
+}
+
+.challenge-intro {
+  max-width: 650px;
+  margin: 0 auto 35px;
+  color: #5d5362;
+}
+
+
+/* QUIZ BOX */
+
+.quiz-box {
+  max-width: 750px;
+  margin: 0 auto;
+
+  padding: 32px;
+
+  background: white;
+
+  border: 1px solid #e3d7e9;
+  border-radius: 20px;
+
+  box-shadow:
+    0 10px 30px rgba(55, 31, 67, 0.10);
+
+  text-align: left;
+}
+
+
+/* QUIZ TOP */
+
+.quiz-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 15px;
+
+  margin-bottom: 25px;
+
+  color: #70409a;
+
+  font-size: 14px;
+  font-weight: bold;
+}
+
+
+/* QUESTION */
+
+.quiz-box h3 {
+  color: #3d2348;
+
+  font-size: 22px;
+  line-height: 1.5;
+
+  margin-bottom: 25px;
+}
+
+
+/* ANSWERS */
+
+.answers {
+  display: grid;
+  gap: 12px;
+}
+
+.answer-btn {
+  width: 100%;
+
+  padding: 15px 18px;
+
+  border: 1px solid #dcd0e2;
+  border-radius: 12px;
+
+  background: #faf7fc;
+
+  color: #33283a;
+
+  cursor: pointer;
+
+  text-align: left;
+
+  font-size: 15px;
+
+  transition: 0.2s;
+}
+
+.answer-btn:hover {
+  background: #eee2f5;
+
+  border-color: #8a50ae;
+
+  transform: translateY(-2px);
+}
+
+.answer-btn:disabled {
+  cursor: default;
+}
+
+.answer-btn.correct {
+  background: #d9f1df;
+  border-color: #55a968;
+  color: #245d31;
+}
+
+.answer-btn.wrong {
+  background: #f6dada;
+  border-color: #c95b5b;
+  color: #7a2525;
+}
+
+
+/* NEXT BUTTON */
+
+.quiz-btn {
+  margin-top: 25px;
+
+  padding: 13px 24px;
+
+  border: none;
+  border-radius: 25px;
+
+  background: #5d2b79;
+  color: white;
+
+  cursor: pointer;
+
+  font-weight: bold;
+  font-size: 15px;
+
+  transition: 0.2s;
+}
+
+.quiz-btn:hover {
+  background: #70409a;
+
+  transform: translateY(-2px);
+}
+
+
+/* QUIZ RESULT */
+
+.quiz-result {
+  margin-top: 20px;
+
+  color: #5d2b79;
+
+  font-weight: bold;
+
+  text-align: center;
+}
+
+
 /* FOOTER */
 
 footer {
@@ -617,6 +800,44 @@ footer .small {
     padding: 22px;
   }
 
+
+  /* CHALLENGES PHONE */
+
+  .challenge-section {
+    width: 92%;
+    padding: 55px 0;
+  }
+
+  .challenge-section h2 {
+    font-size: 34px;
+  }
+
+  .challenge-intro {
+    font-size: 15px;
+  }
+
+  .quiz-box {
+    padding: 20px;
+    border-radius: 16px;
+  }
+
+  .quiz-top {
+    font-size: 13px;
+  }
+
+  .quiz-box h3 {
+    font-size: 19px;
+  }
+
+  .answer-btn {
+    padding: 13px 15px;
+    font-size: 14px;
+  }
+
+  .quiz-btn {
+    width: 100%;
+  }
+
 }
 
 
@@ -634,6 +855,14 @@ footer .small {
 
   .topic summary {
     font-size: 16px;
+  }
+
+  .challenge-section h2 {
+    font-size: 30px;
+  }
+
+  .quiz-box {
+    padding: 16px;
   }
 
 }
