@@ -17,6 +17,7 @@
   <a href="#prelim1">1st Prelim</a>  
   <a href="#prelim2">2nd Prelim</a>  
   <a href="#midterm">Midterm</a>  
+  <a href="#challenges">Challenges</a>
   <a href="#review">Quick Review</a>  
   <a href="#about">About A3</a>  
 </nav>  <main>  <section class="hero">  <span class="badge">CLJ 1 • LEARNING MATERIAL</span>
@@ -383,3 +384,250 @@ for judicial action for the first time.
 </li>  <li>  
 <strong>Appellate Jurisdiction</strong> —  
 power of a higher court to review a f
+
+<!-- ================= CHALLENGES ================= -->
+<section class="challenge-section" id="challenges">
+
+  <p class="section-label">CLJ 1 / CHALLENGES</p>
+
+  <h2>Test your<br><em>knowledge.</em></h2>
+
+  <p class="challenge-intro">
+    Take the challenge and see how much you remember from the CLJ 1 lessons.
+  </p>
+
+  <div class="quiz-box">
+
+    <div class="quiz-top">
+      <span id="question-number">Question 1 of 10</span>
+      <span id="score">Score: 0</span>
+    </div>
+
+    <h3 id="question">Question goes here</h3>
+
+    <div id="answers" class="answers"></div>
+
+    <button id="next-btn" class="quiz-btn" onclick="nextQuestion()">
+      Next Question →
+    </button>
+
+    <div id="result" class="quiz-result"></div>
+
+  </div>
+
+</section>
+
+
+<script>
+
+const questions = [
+
+  {
+    question: "What does 'Nullum crimen nulla poena sine lege' mean?",
+    answers: [
+      "There is no crime where there is no law punishing it.",
+      "Everyone is guilty until proven innocent.",
+      "All crimes must be punished.",
+      "Justice must always be equal."
+    ],
+    correct: 0
+  },
+
+  {
+    question: "Which is NOT one of the five pillars of the Criminal Justice System?",
+    answers: [
+      "Law Enforcement",
+      "Prosecution",
+      "Court",
+      "Legislature"
+    ],
+    correct: 3
+  },
+
+  {
+    question: "Who generally represents the State in criminal proceedings?",
+    answers: [
+      "The Prosecutor",
+      "The Victim",
+      "The Witness",
+      "The Accused"
+    ],
+    correct: 0
+  },
+
+  {
+    question: "What is the purpose of a preliminary investigation?",
+    answers: [
+      "To determine if there is sufficient basis to hold the respondent for trial.",
+      "To automatically convict the accused.",
+      "To determine the punishment immediately.",
+      "To replace the court trial."
+    ],
+    correct: 0
+  },
+
+  {
+    question: "What is the highest court in the Philippines?",
+    answers: [
+      "Regional Trial Court",
+      "Court of Appeals",
+      "Supreme Court",
+      "Municipal Trial Court"
+    ],
+    correct: 2
+  },
+
+  {
+    question: "What is judicial power mainly concerned with?",
+    answers: [
+      "Making laws",
+      "Settling actual controversies involving legally demandable rights",
+      "Conducting elections",
+      "Collecting taxes"
+    ],
+    correct: 1
+  },
+
+  {
+    question: "What is jurisdiction?",
+    answers: [
+      "The geographical location of a crime",
+      "The power or authority of a court to hear and decide a case",
+      "The punishment given to an offender",
+      "The process of investigating a crime"
+    ],
+    correct: 1
+  },
+
+  {
+    question: "What is venue?",
+    answers: [
+      "The power of the court",
+      "The punishment imposed by the court",
+      "The geographical area where a case may be heard",
+      "The evidence presented in court"
+    ],
+    correct: 2
+  },
+
+  {
+    question: "What is appellate jurisdiction?",
+    answers: [
+      "The power to hear a case for the first time",
+      "The power of a higher court to review a decision of a lower court",
+      "The power to investigate a crime",
+      "The power to create criminal laws"
+    ],
+    correct: 1
+  },
+
+  {
+    question: "How many members compose the Supreme Court under the 1987 Constitution?",
+    answers: [
+      "10",
+      "12",
+      "15",
+      "20"
+    ],
+    correct: 2
+  }
+
+];
+
+let currentQuestion = 0;
+let score = 0;
+let answered = false;
+
+function showQuestion() {
+
+  answered = false;
+
+  const question = questions[currentQuestion];
+
+  document.getElementById("question-number").textContent =
+    "Question " + (currentQuestion + 1) + " of " + questions.length;
+
+  document.getElementById("score").textContent =
+    "Score: " + score;
+
+  document.getElementById("question").textContent =
+    question.question;
+
+  const answersDiv = document.getElementById("answers");
+
+  answersDiv.innerHTML = "";
+
+  question.answers.forEach((answer, index) => {
+
+    const button = document.createElement("button");
+
+    button.textContent = answer;
+    button.className = "answer-btn";
+
+    button.onclick = function() {
+      checkAnswer(index, button);
+    };
+
+    answersDiv.appendChild(button);
+
+  });
+
+  document.getElementById("result").textContent = "";
+
+  document.getElementById("next-btn").style.display =
+    currentQuestion === questions.length - 1 ? "none" : "block";
+}
+
+function checkAnswer(selected, button) {
+
+  if (answered) return;
+
+  answered = true;
+
+  const correct = questions[currentQuestion].correct;
+
+  const buttons = document.querySelectorAll(".answer-btn");
+
+  buttons.forEach(btn => {
+    btn.disabled = true;
+  });
+
+  if (selected === correct) {
+
+    score++;
+
+    button.classList.add("correct");
+
+    document.getElementById("result").textContent =
+      "Correct! Good job!";
+
+  } else {
+
+    button.classList.add("wrong");
+
+    buttons[correct].classList.add("correct");
+
+    document.getElementById("result").textContent =
+      "Incorrect. Review the lesson and try again.";
+
+  }
+
+  document.getElementById("score").textContent =
+    "Score: " + score;
+}
+
+function nextQuestion() {
+
+  if (currentQuestion < questions.length - 1) {
+
+    currentQuestion++;
+
+    showQuestion();
+
+  }
+
+}
+
+showQuestion();
+
+</script>
