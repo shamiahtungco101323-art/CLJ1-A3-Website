@@ -387,44 +387,9 @@ power of a higher court to review a f
 
 
 </p>  </div>  </details>  </section>  <!-- CHALLENGES -->  <section id="Challenges">  <h2 class="section-title">  
-<!-- ==================== CHALLENGES ==================== -->
-
-<section id="challenges" class="challenges-section">
-
-  <div class="challenge-header">
-    <span class="challenge-label">CLJ 1 / CHALLENGES</span>
-    <h2>Test your knowledge.</h2>
-    <p>
-      Take the challenge and see how much you remember
-      from the CLJ 1 lessons.
-    </p>
-  </div>
-
-  <div class="quiz-box">
-
-    <div class="quiz-info">
-      <span id="question-number">Question 1 of 10</span>
-      <span id="score">Score: 0</span>
-    </div>
-
-    <h3 id="question">
-      Loading question...
-    </h3>
-
-    <div id="answers"></div>
-
-    <button id="next-btn" class="quiz-btn" type="button">
-      Next Question →
-    </button>
-
-    <p id="result"></p>
-
-  </div>
-
-</section>
-
-
 <script>
+
+/* ================= CHALLENGE QUIZ ================= */
 
 const questions = [
 
@@ -440,7 +405,18 @@ const questions = [
   },
 
   {
-    question: "Which branch of government interprets and applies the law?",
+    question: "What are the five pillars of the Criminal Justice System?",
+    answers: [
+      "Police, Court, Jail, Family, School",
+      "Law Enforcement, Prosecution, Court, Correction, Community",
+      "Police, Judge, Lawyer, Prison, Government",
+      "Court, Media, Police, School, Community"
+    ],
+    correct: 1
+  },
+
+  {
+    question: "Which branch of government exercises judicial power?",
     answers: [
       "Executive",
       "Legislative",
@@ -451,98 +427,91 @@ const questions = [
   },
 
   {
-    question: "What are the five pillars of the Criminal Justice System?",
+    question: "What is a crime?",
     answers: [
-      "Police, School, Court, Jail, Family",
-      "Law Enforcement, Prosecution, Court, Correction, Community",
-      "Police, Prosecutor, Lawyer, Judge, Prison",
-      "Government, Police, Court, Media, Community"
-    ],
-    correct: 1
-  },
-
-  {
-    question: "What is a person called when a criminal case is already pending before the court?",
-    answers: [
-      "Suspect",
-      "Respondent",
-      "Accused",
-      "Person of Interest"
-    ],
-    correct: 2
-  },
-
-  {
-    question: "What is the main purpose of preliminary investigation?",
-    answers: [
-      "To determine whether there is sufficient basis to hold the respondent for trial.",
-      "To immediately punish the suspect.",
-      "To decide the final sentence.",
-      "To replace the court."
+      "An act or omission punishable by public laws.",
+      "Any mistake made by a person.",
+      "A disagreement between two people.",
+      "An act that is always accepted by society."
     ],
     correct: 0
+  },
+
+  {
+    question: "What is a person called when a case is already pending before the court?",
+    answers: [
+      "Person of Interest",
+      "Suspect",
+      "Respondent",
+      "Accused"
+    ],
+    correct: 3
+  },
+
+  {
+    question: "What is preliminary investigation mainly used to determine?",
+    answers: [
+      "The final punishment of the accused.",
+      "Whether there is sufficient basis to hold the respondent for trial.",
+      "Whether a law should be changed.",
+      "Who will become the judge."
+    ],
+    correct: 1
   },
 
   {
     question: "What is prosecution?",
     answers: [
       "The process of bringing a criminal action before the court.",
+      "The process of creating a new law.",
       "The process of arresting every suspect.",
-      "The punishment given by the court.",
-      "The process of making laws."
+      "The punishment given to a criminal."
     ],
     correct: 0
   },
 
   {
-    question: "What is judicial power?",
-    answers: [
-      "The power to create laws.",
-      "The power to enforce laws.",
-      "The duty of courts to settle actual controversies involving legally demandable rights.",
-      "The power to appoint all government officials."
-    ],
-    correct: 2
-  },
-
-  {
     question: "What is jurisdiction?",
     answers: [
+      "The punishment given by the court.",
       "The geographical location of a crime.",
-      "The power or authority of a court to hear and decide a case.",
-      "The punishment imposed on an accused.",
-      "The evidence presented by the prosecution."
+      "The authority of a court to hear and decide a case.",
+      "The evidence presented in court."
     ],
-    correct: 1
+    correct: 2
   },
 
   {
     question: "What is venue?",
     answers: [
-      "The power of the court.",
-      "The punishment for a crime.",
+      "The authority of the court.",
       "The geographical area where a case may be heard.",
-      "The evidence used in court."
+      "The final decision of the judge.",
+      "The punishment for an offense."
     ],
-    correct: 2
+    correct: 1
   },
 
   {
-    question: "How many members does the Supreme Court have under the 1987 Constitution?",
+    question: "How many members compose the Supreme Court under the 1987 Constitution?",
     answers: [
-      "9",
-      "12",
-      "15",
-      "21"
+      "9 members",
+      "12 members",
+      "15 members",
+      "21 members"
     ],
     correct: 2
   }
 
 ];
 
+
 let currentQuestion = 0;
 let score = 0;
 let answered = false;
+
+
+/* GET HTML ELEMENTS */
 
 const questionElement =
   document.getElementById("question");
@@ -563,13 +532,15 @@ const scoreElement =
   document.getElementById("score");
 
 
+/* SHOW QUESTION */
+
 function showQuestion() {
 
   answered = false;
 
-  const question = questions[currentQuestion];
+  const current = questions[currentQuestion];
 
-  questionElement.textContent = question.question;
+  questionElement.textContent = current.question;
 
   questionNumberElement.textContent =
     "Question " + (currentQuestion + 1) +
@@ -578,13 +549,13 @@ function showQuestion() {
   scoreElement.textContent =
     "Score: " + score;
 
-  answersElement.innerHTML = "";
-
   resultElement.textContent = "";
+
+  answersElement.innerHTML = "";
 
   nextButton.style.display = "none";
 
-  question.answers.forEach(function(answer, index) {
+  current.answers.forEach(function(answer, index) {
 
     const button = document.createElement("button");
 
@@ -607,16 +578,21 @@ function showQuestion() {
 }
 
 
+/* CHECK ANSWER */
+
 function checkAnswer(selectedIndex, selectedButton) {
 
-  if (answered) return;
+  if (answered) {
+    return;
+  }
 
   answered = true;
 
-  const question = questions[currentQuestion];
+  const current = questions[currentQuestion];
 
   const answerButtons =
     document.querySelectorAll(".answer-btn");
+
 
   answerButtons.forEach(function(button) {
 
@@ -624,7 +600,8 @@ function checkAnswer(selectedIndex, selectedButton) {
 
   });
 
-  if (selectedIndex === question.correct) {
+
+  if (selectedIndex === current.correct) {
 
     score++;
 
@@ -637,12 +614,14 @@ function checkAnswer(selectedIndex, selectedButton) {
 
     selectedButton.classList.add("wrong");
 
-    answerButtons[question.correct].classList.add("correct");
+    answerButtons[current.correct]
+      .classList.add("correct");
 
     resultElement.textContent =
       "Incorrect. The correct answer is highlighted.";
 
   }
+
 
   scoreElement.textContent =
     "Score: " + score;
@@ -652,9 +631,13 @@ function checkAnswer(selectedIndex, selectedButton) {
 }
 
 
+/* NEXT QUESTION */
+
 nextButton.addEventListener("click", function() {
 
-  if (!answered) return;
+  if (!answered) {
+    return;
+  }
 
   currentQuestion++;
 
@@ -671,6 +654,8 @@ nextButton.addEventListener("click", function() {
 });
 
 
+/* FINAL SCORE */
+
 function showFinalScore() {
 
   questionElement.textContent =
@@ -679,19 +664,28 @@ function showFinalScore() {
   answersElement.innerHTML = "";
 
   questionNumberElement.textContent =
-    "Finished!";
+    "Quiz Finished!";
 
   scoreElement.textContent =
-    "Score: " + score + " / " + questions.length;
+    "Final Score: " + score + " / " + questions.length;
 
   resultElement.textContent =
-    "Great job! You finished the CLJ 1 Challenge.";
+    "Great job! You completed the CLJ 1 Challenge.";
 
-  nextButton.textContent = "Try Again ↻";
+  nextButton.textContent =
+    "Try Again ↻";
 
-  nextButton.style.display = "block";
+  nextButton.style.display =
+    "block";
 
-  nextButton.onclick = function() {
+}
+
+
+/* TRY AGAIN */
+
+nextButton.addEventListener("click", function() {
+
+  if (currentQuestion >= questions.length) {
 
     currentQuestion = 0;
 
@@ -702,261 +696,13 @@ function showFinalScore() {
 
     showQuestion();
 
-    nextButton.onclick = nextQuestionHandler;
-
-  };
-
-}
-
-
-function nextQuestionHandler() {
-
-  if (!answered) return;
-
-  currentQuestion++;
-
-  if (currentQuestion < questions.length) {
-
-    showQuestion();
-
-  } else {
-
-    showFinalScore();
-
   }
 
-}
+});
 
+
+/* START QUIZ */
 
 showQuestion();
 
 </script>
-    <h3 id="question">Question goes here</h3>
-
-    <div id="answers" class="answers"></div>
-
- <button id="next-btn" class="quiz-btn">
-    Next Question →
-</button>
-
-    <div id="result" class="quiz-result"></div>
-
-  </div>
-
-</section>
-
-
-<script>
-
-const questions = [
-
-  {
-    question: "What does 'Nullum crimen nulla poena sine lege' mean?",
-    answers: [
-      "There is no crime where there is no law punishing it.",
-      "Everyone is guilty until proven innocent.",
-      "All crimes must be punished.",
-      "Justice must always be equal."
-    ],
-    correct: 0
-  },
-
-  {
-    question: "Which is NOT one of the five pillars of the Criminal Justice System?",
-    answers: [
-      "Law Enforcement",
-      "Prosecution",
-      "Court",
-      "Legislature"
-    ],
-    correct: 3
-  },
-
-  {
-    question: "Who generally represents the State in criminal proceedings?",
-    answers: [
-      "The Prosecutor",
-      "The Victim",
-      "The Witness",
-      "The Accused"
-    ],
-    correct: 0
-  },
-
-  {
-    question: "What is the purpose of a preliminary investigation?",
-    answers: [
-      "To determine if there is sufficient basis to hold the respondent for trial.",
-      "To automatically convict the accused.",
-      "To determine the punishment immediately.",
-      "To replace the court trial."
-    ],
-    correct: 0
-  },
-
-  {
-    question: "What is the highest court in the Philippines?",
-    answers: [
-      "Regional Trial Court",
-      "Court of Appeals",
-      "Supreme Court",
-      "Municipal Trial Court"
-    ],
-    correct: 2
-  },
-
-  {
-    question: "What is judicial power mainly concerned with?",
-    answers: [
-      "Making laws",
-      "Settling actual controversies involving legally demandable rights",
-      "Conducting elections",
-      "Collecting taxes"
-    ],
-    correct: 1
-  },
-
-  {
-    question: "What is jurisdiction?",
-    answers: [
-      "The geographical location of a crime",
-      "The power or authority of a court to hear and decide a case",
-      "The punishment given to an offender",
-      "The process of investigating a crime"
-    ],
-    correct: 1
-  },
-
-  {
-    question: "What is venue?",
-    answers: [
-      "The power of the court",
-      "The punishment imposed by the court",
-      "The geographical area where a case may be heard",
-      "The evidence presented in court"
-    ],
-    correct: 2
-  },
-
-  {
-    question: "What is appellate jurisdiction?",
-    answers: [
-      "The power to hear a case for the first time",
-      "The power of a higher court to review a decision of a lower court",
-      "The power to investigate a crime",
-      "The power to create criminal laws"
-    ],
-    correct: 1
-  },
-
-  {
-    question: "How many members compose the Supreme Court under the 1987 Constitution?",
-    answers: [
-      "10",
-      "12",
-      "15",
-      "20"
-    ],
-    correct: 2
-  }
-
-];
-
-let currentQuestion = 0;
-let score = 0;
-let answered = false;
-
-function showQuestion() {
-
-  answered = false;
-
-  const question = questions[currentQuestion];
-
-  document.getElementById("question-number").textContent =
-    "Question " + (currentQuestion + 1) + " of " + questions.length;
-
-  document.getElementById("score").textContent =
-    "Score: " + score;
-
-  document.getElementById("question").textContent =
-    question.question;
-
-  const answersDiv = document.getElementById("answers");
-
-  answersDiv.innerHTML = "";
-
-  question.answers.forEach((answer, index) => {
-
-    const button = document.createElement("button");
-
-    button.textContent = answer;
-    button.className = "answer-btn";
-
-    button.onclick = function() {
-      checkAnswer(index, button);
-    };
-
-    answersDiv.appendChild(button);
-
-  });
-
-  document.getElementById("result").textContent = "";
-
-  document.getElementById("next-btn").style.display =
-    currentQuestion === questions.length - 1 ? "none" : "block";
-}
-
-function checkAnswer(selected, button) {
-
-  if (answered) return;
-
-  answered = true;
-
-  const correct = questions[currentQuestion].correct;
-
-  const buttons = document.querySelectorAll(".answer-btn");
-
-  buttons.forEach(btn => {
-    btn.disabled = true;
-  });
-
-  if (selected === correct) {
-
-    score++;
-
-    button.classList.add("correct");
-
-    document.getElementById("result").textContent =
-      "Correct! Good job!";
-
-  } else {
-
-    button.classList.add("wrong");
-
-    buttons[correct].classList.add("correct");
-
-    document.getElementById("result").textContent =
-      "Incorrect. Review the lesson and try again.";
-
-  }
-
-  document.getElementById("score").textContent =
-    "Score: " + score;
-}
-
-function nextQuestion() {
-
-  if (currentQuestion < questions.length - 1) {
-
-    currentQuestion++;
-
-    showQuestion();
-
-  }
-
-}
-
-showQuestion();
-
-</script>
-
