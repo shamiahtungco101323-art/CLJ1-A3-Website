@@ -84,7 +84,7 @@ Camancho
 Brade
 
 
-PURPOSE
+PURPOSE. 
 
 This website is intended to help students access and review
 CLJ 1 learning materials in an organized and convenient way.
