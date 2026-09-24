@@ -559,8 +559,6 @@ const scoreElement =
 
 function showQuestion() {
 
-  answered = false;
-
   const current = questions[currentQuestion];
 
   questionElement.textContent = current.question;
@@ -583,22 +581,17 @@ function showQuestion() {
     const button = document.createElement("button");
 
     button.textContent = answer;
-
     button.className = "answer-btn";
-
     button.type = "button";
 
     button.addEventListener("click", function() {
-
       checkAnswer(index, button);
-
     });
 
     answersElement.appendChild(button);
-
   });
-
 }
+
 
 
 /* CHECK ANSWER */
